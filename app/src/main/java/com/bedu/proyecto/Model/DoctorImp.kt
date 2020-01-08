@@ -57,9 +57,5 @@ class DoctorImp: Doctor {
 
                 return callResponse
         }
-
-        override fun guardarInfo() {
-
-        }
 }
 

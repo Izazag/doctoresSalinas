@@ -9,5 +9,4 @@ import retrofit2.Call
 interface Doctor {
     fun infoDoctores(): Call<List<DoctorInfo>>
     fun dataDoctor(): RetrofitAPIs
-    fun guardarInfo()
 }
