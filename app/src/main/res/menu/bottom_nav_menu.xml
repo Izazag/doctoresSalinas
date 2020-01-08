@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/doctores"
+        android:title="Doctores"
+        android:icon="@android:drawable/ic_menu_compass"/>
+    <item
+        android:id="@+id/citas"
+        android:title="Citas"
+        android:icon="@android:drawable/ic_menu_compass"/>
+    <item
+        android:id="@+id/Clínicas"
+        android:title="Clínicas"
+        android:icon="@android:drawable/ic_menu_compass"/>
+    <item
+        android:id="@+id/Configuración"
+        android:title="Configuración"
+        android:icon="@android:drawable/ic_menu_compass"/>
+</menu>
