@@ -18,21 +18,25 @@ data class DoctorInfo(
 
 data class loginResult(
     @SerializedName("result") var result: String,
-    @SerializedName("type") var type: Int
+    @SerializedName("isDoctor") var type: Int
+)
+
+data class loginSend(
+    @SerializedName("email") var email: String,
+    @SerializedName("password") var password: String
 )
 
 data class CitaInfo(
     @SerializedName("id") var id: String
 )
 
-class Doctores:RealmObject(){
-    @PrimaryKey
-    var id = 0
-    lateinit var nombre: String
-    lateinit var apellidos: String
-    lateinit var cedula: String
-    lateinit var experiencia: String
-    lateinit var calificacion: String
-    lateinit var clinica: String
-    lateinit var foto: String
-}
+data class registroInfo(
+    @SerializedName("id") var id: String,
+    @SerializedName("userId") var userId: String,
+    @SerializedName("nombre") var nombre: String,
+    @SerializedName("ine") var ine: String,
+    @SerializedName("fechaNacimiento") var fechaNacimiento: String,
+    @SerializedName("foto") var foto: String,
+    @SerializedName("email") var email: String,
+    @SerializedName("password") var password: String
+)

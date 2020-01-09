@@ -2,7 +2,7 @@ package com.bedu.proyecto.View
 
 import com.bedu.proyecto.Retrofit.DoctorInfo
 
-interface MainView {
+interface InfoDoctorView {
     fun infoDoctor(nombreDoctor: String)
 
 }

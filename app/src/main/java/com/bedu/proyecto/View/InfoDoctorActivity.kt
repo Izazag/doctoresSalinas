@@ -5,12 +5,10 @@ import android.os.Bundle
 import android.util.Log
 import com.bedu.proyecto.Presenter.MainPageImp
 import com.bedu.proyecto.R
-import com.bedu.proyecto.Retrofit.DoctorInfo
 
-class MainActivity : AppCompatActivity(), MainView {
+class InfoDoctorActivity : AppCompatActivity(), InfoDoctorView {
 
     val presenter = MainPageImp(this)
-    lateinit var listaDoctoresFragment: DoctoresFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

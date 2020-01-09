@@ -3,12 +3,12 @@ package com.bedu.proyecto.Presenter
 import android.util.Log
 import com.bedu.proyecto.Model.DoctorImp
 import com.bedu.proyecto.Retrofit.DoctorInfo
-import com.bedu.proyecto.View.MainView
+import com.bedu.proyecto.View.InfoDoctorView
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class MainPageImp(var vista: MainView): MainPage {
+class MainPageImp(var vista: InfoDoctorView): MainPage {
 
     override fun mostrarInfoDoctor(id: String){
 
@@ -26,7 +26,7 @@ class MainPageImp(var vista: MainView): MainPage {
                 response: Response<DoctorInfo>
             ) {
                 if(response.isSuccessful){
-                    nombreDoctor = response.body()!!.nombre + " " + response.body()!!.apellidos
+                    nombreDoctor = response.body()!!.nombre
                     vista.infoDoctor(nombreDoctor)
                     Log.d("Message", "${response.body()}")
                 }
